@@ -59,6 +59,3 @@ obb/*
 # generated files
 openbb_guru/package
 openbb_guru/assets
-
-# idea
-.idea
