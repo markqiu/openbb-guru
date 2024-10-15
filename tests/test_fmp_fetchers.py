@@ -1,6 +1,11 @@
 import pytest
 from openbb_core.app.service.user_service import UserService
 
+from openbb_guru.models.house_disclosure import FMPHouseDisclosureFetcher
+from openbb_guru.models.house_disclosure_rss_feed import FMPHouseDisclosureRSSFeedFetcher
+from openbb_guru.models.senate_trading import FMPSenateTradingFetcher
+from openbb_guru.models.senate_trading_rss_feed import FMPSenateTradingRSSFeedFetcher
+
 test_credentials = UserService().default_user_settings.credentials.model_dump(
     mode="json"
 )
